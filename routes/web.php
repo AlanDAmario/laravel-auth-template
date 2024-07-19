@@ -18,6 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+//da modificare per la gestione
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
